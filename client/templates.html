@@ -1,0 +1,26 @@
+<template name="pokerGame">
+    <h2>Game {{game.number}}</h2>
+    <div class="btn-group-lg" role="group">
+        {{#each bidOptions}}
+            <button type="button" class="btn btn-primary bid" value="{{this}}">{{this}}</button>
+        {{/each}}
+    </div>
+
+    <div class="row">
+        {{#each users}}
+            {{> userBid}}
+        {{/each}}
+    </div>
+
+    <button id="new-game" class="btn btn-default">New Game</button>
+
+</template>
+
+<template name="userBid">
+    <div class="panel panel-default card">
+        <div class="panel-heading">{{profile.name}}</div>
+        <div class="panel-body">
+            {{bidValue}}
+        </div>
+    </div>
+</template>

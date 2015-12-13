@@ -1,0 +1,11 @@
+<head>
+  <title>Simple Poker</title>
+</head>
+
+<body>
+    {{#if currentUser}}
+      {{> pokerGame}}
+    {{else}}
+      {{> loginButtons}}
+    {{/if}}
+</body>

@@ -1,0 +1,22 @@
+body {
+    margin: 15px;
+}
+.card {
+    width: 150px;
+    height: 210px;
+    margin: 15px;
+    float:left;
+}
+
+.card .panel-heading {
+    text-align: center;
+}
+
+.card .panel-body {
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
